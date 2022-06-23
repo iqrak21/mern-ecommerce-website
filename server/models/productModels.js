@@ -12,7 +12,7 @@ const productSchema = new Schema({
         maxlength: [8, 'Price cannot exceeds 8 character']
     },
 
-    rating: {
+    ratings: {
         type: Number,
         default: 0
     },
@@ -48,8 +48,14 @@ const productSchema = new Schema({
     },
 
     reviews: [
-
+       
         {
+            user:{
+                type:mongoose.Schema.ObjectId,
+                ref:"User",
+                required:true,
+               },
+    
             name: {
                 type: String,
 
@@ -58,7 +64,7 @@ const productSchema = new Schema({
                 type: Number,
 
             },
-            commet: {
+            comment: {
                 type: String,
 
             }

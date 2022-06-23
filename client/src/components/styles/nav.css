@@ -1,0 +1,28 @@
+.nav{
+    z-index: 1000;
+    background-color: white;
+    padding: 0.5vmax;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(43, 43, 43, 0.137);
+}
+
+
+
+.navlinks{
+    color: rgb(104, 101, 101);
+    text-decoration: none;
+    margin: 1vmax 1.2vmax;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.1vmax;
+   
+}
+
+.navlinks:hover{
+    color:rgb(126, 13, 97);
+    text-decoration: none;
+}
+
